@@ -100,7 +100,7 @@ class ClientOrderOperationsTest extends BaseTestCase
 
     public function setUp(): void
     {
-        $this->params['ora_ridicare'] = (new \DateTime('now + 5 minutes'))->format('H:i');
+        $this->params['ora_ridicare'] = (new \DateTime('now + 2 hour'))->format('H:i');
 
         parent::setUp();
     }
