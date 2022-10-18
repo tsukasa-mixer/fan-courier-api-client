@@ -125,7 +125,7 @@ class ClientOrderOperationsTest extends BaseTestCase
     public function testOrderFailedExtraParam()
     {
         $this->expectException(FanCourierInvalidParamException::class);
-        $this->expectExceptionMessageMatches('/^The only keys accepted are: /');
+        $this->expectExceptionMessageMatches('/^These keys are not allowed: /');
 
         $params = $this->params;
         $params['extra'] = 'new';
@@ -201,7 +201,7 @@ class ClientOrderOperationsTest extends BaseTestCase
     public function testExportOrdersFailedExtraParam()
     {
         $this->expectException(FanCourierInvalidParamException::class);
-        $this->expectExceptionMessageMatches('/^The only keys accepted are: /');
+        $this->expectExceptionMessageMatches('/^These keys are not allowed: /');
 
         $this->client->exportOrders([
             'data' => date('d.m.Y'),
