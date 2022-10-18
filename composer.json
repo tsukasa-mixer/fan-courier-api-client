@@ -1,5 +1,5 @@
 {
-    "name": "infifni/fan-courier-api-client",
+    "name": "tsukasa/fan-courier-api-client",
     "type": "library",
     "description": "Fan Courier API Client",
     "keywords": ["Fan Courier API Client", "Fan Carrier", "Fan Courier", "Fan API Client"],
