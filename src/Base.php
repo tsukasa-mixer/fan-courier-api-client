@@ -83,6 +83,8 @@ abstract class Base implements BaseInterface
     {
         $curl = new Curl();
         $curl->setTimeout($this->timeout);
+        $curl->setOpt(CURLOPT_SSL_VERIFYPEER, false);
+        $curl->setOpt(CURLOPT_SSL_VERIFYHOST, false);
         $curl->post($url, $data);
         foreach ($data as $value) {
             if ($value instanceof CURLFile) {
